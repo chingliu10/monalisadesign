@@ -1,6 +1,9 @@
 .mt{
     margin-top: 15px;
 }
+.red{
+    color: red;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -17,6 +20,8 @@ header{
     height: 10vh;
     padding: 0 15px;
     z-index: 300;
+    background-color: red;
+    color: white;
 }
 
 .topNav{
@@ -83,10 +88,96 @@ header{
     }
 }
 @media (min-width: 992px){
+   
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 14vh;
+        background-color: red;
+        padding: 0 10vh;
+        z-index: 300;
+    }
+
     .banner, .bannerItem img{
         height: 80vh;
     }
     .humberMenu{
         display: none;
     }
+
+    .topNav{
+        height: 8vh;
+    }
+
+    .accInfo a{
+        color: white
+    }
+
+    .bottomNav{
+        margin-top: 0;
+        position: fixed;
+        right: 0;
+        top: 8vh;
+        left: 0;
+        background-color:white;
+        padding:0 5vw;
+        z-index: 0;
+        height: 6vh;
+        transition:none;
+    }
+
+    .bottomNav ul li{
+        display: inline-block;
+        margin-right: 25px;
+        height: 2vh;
+        margin-top: 2vh;
+    }
+
+    .bottomNav ul li a{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: black;
+    }
+    
+    .bottomNav ul{
+      position: relative;
+    }
+    .bottomNav .hr{
+        display: none;
+    }
+
+    .bottomNav form{
+        position: absolute;
+        right: 5vw;
+        top: 0;
+        bottom: ;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .bottomNav form input{
+        height: 2vh;
+        margin-top: 2vh;
+        padding: 10px 10px;
+        font-size: .9rem;
+        border-radius: 2vh;
+        display: inline-block;
+        z-index: 500;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .bottomNav form i{
+        font-size: 1.5rem;
+    }
+
+    /*the end of navigation*/
+
+    .
+
+
 }
