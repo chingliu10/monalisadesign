@@ -60,11 +60,11 @@ header{
     height: 50vh;
 }
 
-.bannerItem{
+.middleBanner{
     height: 100%;
 }
 
-.bannerItem img{
+.middleBanner img{
     height: 50vh;
     width: 100%;
 }
@@ -86,6 +86,11 @@ header{
     .accInfo{
         display: none;
     }
+    
+
+    .sideBanner{
+        display: none;   
+    }
 }
 @media (min-width: 992px){
    
@@ -101,7 +106,7 @@ header{
         z-index: 300;
     }
 
-    .banner, .bannerItem img{
+    .banner, .middleBanner img{
         height: 80vh;
     }
     .humberMenu{
@@ -176,8 +181,64 @@ header{
     }
 
     /*the end of navigation*/
+    .banner{
+        height: 60vh;
+        padding: 0 5vw;
+        display: flex;
+        padding-top: 5vh;
+    }
+    .middleBanner{
+        width: 70%;
+        height: 60vh;
+    }
+    .middleBanner img{
+        height: 60vh;
+    }
+    .sideBanner{
+        height: 60vh;
+        width: 15%;
+        position: relative;
+    }
 
-    .
+    .sideBannerImages{
+        display: grid;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sideBannerImages img{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+    }
+
+    .sideLinks1, .sideLinks2{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .sideLinks2{
+        justify-content: flex-end;
+    }
+
+    .sideLinks .leftSideLinks{
+        position: ;
+    }
+
+    .sideLinks ul li{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+        background-color: red;
+        color: red;
+        border-radius: 30px;
+    }
 
 
 }
