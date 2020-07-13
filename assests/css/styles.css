@@ -1,3 +1,6 @@
+.mt{
+    margin-top: 15px;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -18,9 +21,10 @@ header{
 
 .topNav{
     display: flex;
-    align-items: center;
-    height: 100%;
     justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+
 }
 
 .bottomNav{
@@ -43,6 +47,8 @@ header{
 
 .bottomNav input{
     margin-top: 15px;
+    display: block;
+    width: 100%;
 }
 .banner{
     margin-top: 10vh;
@@ -56,4 +62,31 @@ header{
 .bannerItem img{
     height: 50vh;
     width: 100%;
+}
+
+@media (max-width: 576px){
+    .categories h2{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) and (min-width: 576px){
+   
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (max-width: 992px){
+    .accInfo{
+        display: none;
+    }
+}
+@media (min-width: 992px){
+    .banner, .bannerItem img{
+        height: 80vh;
+    }
+    .humberMenu{
+        display: none;
+    }
 }
