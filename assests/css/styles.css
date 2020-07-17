@@ -1,6 +1,10 @@
 .red{
     color: red;
 }
+
+.redBg{
+    background-color: red;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -320,35 +324,27 @@ header{
         padding: 0 5vw;
         margin-top: 8vh;
     }
-
-    /*the end of banner*/
-
-    /* .collection{
-        padding: 0 5vw;
-        background-color: red;
-    
-    }
-    
-    @keyframes collection{
-        0%{margin-top: 80vh}
-        100%{margin-top: 8vh}
-    } */
-
+   
     .collectionWrapper{
         display: flex;
         margin-top: 50vh;
         margin-bottom: 8vh;
         transition: 1.2s;
+        justify-content: space-between;
     }
 
+    .collection h2{
+        padding-left: 0;
+    }
     
     .collectionItem{
-        width: 33%;
+        width: 23%;
     }
 
-    .collectionItem:nth-of-type(2){
-        margin-left: .5%;
-        margin-right: .5%;
+    .collectionItemInnerBody{
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
     }
 
     .collectionItemInnerBody img{
@@ -356,6 +352,61 @@ header{
         height: 400px;
         object-fit: cover;
     }
+
+  
+    .collectionItemInnerBody:hover .collectionOverlay{
+        opacity: 1;
+    }
+  
+    .collectionOverlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: white;
+        opacity: 0;
+        transition: 1.5s;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .collectionOverlay {
+        display: flex;
+    }
+
+    .overlayCollectionLeft{
+        width: 20%;
+        background-color: red;
+        height: 100%;
+    }
+
+    .overlayCollectionLeft h2{
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        margin-top: 15px;
+    }
+
+
+
+    .collectionOverlayRight{
+        width: 80%;
+    }
+
+    .collectionRightContent h3{
+        padding-top: 15px;
+        padding-left: 15px;
+        font-size: 1.2rem;
+    }
+
+    .collectionRightContent p{
+        padding-left: 15px;
+    }
+
+    .collectionRightContent a{
+        margin-left: 15px;
+    }
+
+
     .temp{
         height: 500px;
         background-color: aliceblue;
