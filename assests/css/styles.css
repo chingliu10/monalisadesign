@@ -162,9 +162,38 @@ header{
 /*footer*/
 
 footer{
+    border-top: 5px solid red;
+    color: black;
+    margin-top: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+.footerLeft{
+    padding: 0 15px;
+}
+
+.footerLeft p:nth-of-type(2){
+    padding-top: 15px;
+}
+
+.footerLeft h3{
+    padding-top: 15px;
+}
+
+.footerLeft button{
+    border: 0;
+    width: 100%;
     background-color: red;
     color: white;
-    margin-top: 15px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.footerRight{
+    padding: 0 15px;
 }
 
 
@@ -520,10 +549,43 @@ footer{
         padding: 30px;
     }
 
-   
-    .temp{
-        height: 500px;
-        background-color: aliceblue;
+    footer{
+        border-top: 5px solid red;
+        margin-top: 8vh;
+        display: flex;
+        padding: 2vw 5vw;
+        background-color: white;
+        color: black;
+    }
+
+
+
+    .footerLeft{
+        width: 40%;
+    }
+
+    .footerLeft form button{
+        height: 50px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .footerRight{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .company{
+        padding-left: 15px;
+        width: 50%;
+      
+    }
+
+    .explore{
+        padding-left: 15px;
+        width: 50%;
+     
     }
 
 }
