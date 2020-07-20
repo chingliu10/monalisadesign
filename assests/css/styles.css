@@ -2,6 +2,10 @@
     color: red;
 }
 
+.textcenter{
+    text-align: center;
+}
+
 .redBg{
     background-color: red;
 }
@@ -128,6 +132,13 @@ header{
 }
 
 /*end of collection*/
+
+/*beginging of bestsellers*/
+
+.bestSellers{
+    display: none;
+}
+
 /*beginning of about*/
 
 .about{
@@ -195,6 +206,53 @@ footer a{
 .footerRight{
     padding: 0 15px;
 }
+
+.copyright{
+    text-align: center;
+    border-top: 1px solid red;
+    padding-top: 15px;
+    margin:0 15px;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialMedia{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+    padding-left: 15px;
+    background-color: red;
+}
+
+.socialMedia a {
+    color: white;
+    font-size: 2rem;
+    margin:0 15px;
+}
+
+.map{
+    position: static;
+    height: 250px;
+    width: 100%;
+    background-color: green;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.copyright{
+    margin:0 5vw;
+    padding-bottom: 15px;
+}
+
 
 
 @media (max-width: 576px){
@@ -427,6 +485,10 @@ footer a{
         padding: 0 5vw;
         margin-top: 8vh;
     }
+
+    .collection h2{
+        text-align: center;
+    }
    
     .collectionWrapper{
         display: flex;
@@ -438,8 +500,14 @@ footer a{
 
     .collection h2{
         padding-left: 0;
+        font-size: 2rem;
     }
     
+    .collection hr{
+        width: 50px;
+        background-color: red;
+        height: 5px;
+    }
     .collectionItem{
         width: 23%;
     }
@@ -509,8 +577,62 @@ footer a{
         margin-left: 15px;
     }
 
+    /*bestsellers*/
+    .bestSellers{
+        display: block;
+        margin-bottom: 8vh;
+        padding: 0 5vw;
+    }
 
+    .bestSellers h2{
+        text-align:  center;
+    }
+
+    .bestSellers hr{
+        width: 50px;
+        background-color: red;
+        height: 5px;
+    }
+
+    .bestSellersWrapper{
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .bestSellersLeft, .bestSellersRight{
+        width: 30%;
+        height: 360px;
+        margin: 20px 0;
+        opacity: .7;
+    }
+
+    .bestSellersLeft img, .bestSellersRight img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .bestSellersLeft{
+        padding-right: 15px;
+    }
+
+    .bestSellersRight{
+        padding-left: 15px;
+    }
+
+    .bestSellersCenter{
+        width: 40%;
+        height: 400px;
+    }
+
+    .bestSellersCenter img{
+        width: 100%;
+        height: 100%;
+    }
     /*about begins here*/
+
 
     .about{
         display: flex;
@@ -572,20 +694,45 @@ footer a{
 
     .footerRight{
         width: 60%;
+    }
+ 
+    .copyright{
+        margin:0 5vw;
+        padding-bottom: 15px;
+    }
+
+    .socialMedia{
+        margin-top: 15px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-basis: auto;
+        padding-left: 15px;
+        background-color: red;
     }
 
-    .company{
-        padding-left: 15px;
-        width: 50%;
-      
+    .socialMedia a {
+        color: white;
+        font-size: 50px;
+        margin:0 15px;
     }
 
-    .explore{
-        padding-left: 15px;
-        width: 50%;
+    .map{
+        position: static;
+        height: 250px;
+        width: 100%;
      
+    }
+
+    .map iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .copyright{
+        margin:0 5vw;
+        padding-bottom: 15px;
     }
 
 }
