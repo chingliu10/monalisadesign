@@ -502,7 +502,8 @@ footer a{
         padding-left: 0;
         font-size: 2rem;
     }
-    
+
+   
     .collection hr{
         width: 50px;
         background-color: red;
@@ -554,7 +555,8 @@ footer a{
     .overlayCollectionLeft h2{
         writing-mode: vertical-rl;
         text-orientation: upright;
-        margin-top: 15px;
+        margin-top: 0;
+        font-size: 1.2rem;
     }
 
 
