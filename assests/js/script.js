@@ -1,5 +1,14 @@
 
-document.querySelector(".ap").addEventListener("click", e => e.preventDefault());
+ let links = document.querySelectorAll(".parent");
+
+ links.forEach( (element) => {
+     element.addEventListener("click", (e) => {
+         e.preventDefault()
+         element.nextElementSibling.style.display = "block";
+        });
+    
+ });
+
 let menu = document.querySelector(".humberMenu");
 
  let menuVisibility = false;
