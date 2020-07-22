@@ -16,7 +16,7 @@
 
     }else{
     
-    getMenu.style.top = "-80vh";
+    getMenu.style.top = "-1500px";
      menuVisibility = false;
 
     }
