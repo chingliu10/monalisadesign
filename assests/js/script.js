@@ -1,5 +1,6 @@
 
- let menu = document.querySelector(".humberMenu");
+document.querySelector(".ap").addEventListener("click", e => e.preventDefault());
+let menu = document.querySelector(".humberMenu");
 
  let menuVisibility = false;
 

@@ -52,19 +52,25 @@ header{
     overflow-y: scroll;
 }
 
-.bottomNav ul li{
+.bottomNav ul li a{
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
+.bottomNav ul li a:hover + .dropDown{
+    display: block;
+}
+
 .bottomNav ul li .dropDown{
     background-color: red;
     padding-left: 30px;
+    display: none;
 }
 
 .bottomNav ul li .dropDown li a{
     text-transform: capitalize;
+    font-size: 1.2rem;
 }
 
 .bottomNav input{
