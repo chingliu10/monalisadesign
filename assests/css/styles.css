@@ -42,19 +42,30 @@ header{
     margin-top: 15px;
     position: fixed;
     right: 0;
-    top: -80vh;
+    top: -100vh;
     left: 40%;
     background-color:white;
     padding-left: 15px;
     padding-right: 15px;
     z-index: -10;
     transition:1s;
+    overflow-y: scroll;
 }
 
 .bottomNav ul li{
     display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+.bottomNav ul li .dropDown{
+    background-color: red;
+    padding-left: 30px;
+}
+
+.bottomNav ul li .dropDown li a{
+    text-transform: capitalize;
+}
 
 .bottomNav input{
     margin-top: 15px;
