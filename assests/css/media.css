@@ -76,7 +76,7 @@
         height: 4vh;
         margin-top: 2vh;
         width: auto;
-        background-color: red;
+        margin-right: 15px;
     }
 
     .bottomNav ul li a{
@@ -147,12 +147,46 @@
         display: flex;
     }
     .middleBanner{
+        position: relative;
         width: 70%;
         height: 68vh;
     }
     .middleBanner img{
         height: 68vh;
+        object-fit: cover;
     }
+
+    .bannerCaption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .bannerCaptionContent h2,
+    .bannerCaptionContent p{
+        padding-left: 50px;
+    }
+
+    .bannerCaptionContent{
+        margin: 0 100px;
+        margin-bottom: 4vh;
+        border-left: 5px solid red;
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    .bannerCaptionContent a{
+        font-size: 1.2rem;
+        color: red;
+        margin-left: 15px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
     .sideBanner{
         height: 68vh;
         width: 15%;
@@ -170,6 +204,7 @@
         display: inline-block;
         height: 100px;
         width: 100px;
+        object-fit: cover;
     }
 
     .sideLinks1, .sideLinks2{
@@ -319,7 +354,7 @@
     .overlayCollectionLeft h2{
         writing-mode: vertical-rl;
         text-orientation: upright;
-        margin-top: 0;
+        margin-top: 5px;
         font-size: 1.2rem;
     }
 
@@ -450,6 +485,7 @@
 
     .footerLeft{
         width: 40%;
+        padding-left: 0;
     }
 
     .footerLeft form button{
@@ -460,6 +496,7 @@
 
     .footerRight{
         width: 60%;
+        padding-right: 0;
     }
  
     .copyright{
