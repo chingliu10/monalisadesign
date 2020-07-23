@@ -172,6 +172,10 @@
         padding-left: 50px;
     }
 
+    .bannerSmallP{
+        display: block;
+    }
+
     .bannerCaptionContent{
         margin: 0 100px;
         margin-bottom: 4vh;
@@ -439,6 +443,7 @@
         display: flex;
         height: 600px;
         padding: 0 5vw;
+        background-color: white;
     }
 
     .aboutLeft{
